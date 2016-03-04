@@ -1,0 +1,35 @@
+USE [IotDb]
+GO
+
+SELECT [FirstName]
+      ,[LastName]
+      ,[Address1]
+      ,[Address2]
+      ,[City]
+      ,[State]
+      ,[Zip]
+      ,[Phone]
+      ,[DateOfBirth]
+      ,[DateOfHire]
+      ,[JobCode1]
+      ,[JobCode2]
+      ,[JobCode3]
+      ,[JobCode4]
+      ,[PayRate1]
+      ,[PayRate2]
+      ,[PayRate3]
+      ,[Terminated]
+      ,[ZapID]
+      ,[ZapReason]
+      ,[ReHire]
+      ,[LastDay]
+      ,[ReturnDate]
+      ,[Married]
+      ,[NumDependants]
+      ,[Gender]
+      ,[WithholdingExtra]
+  FROM [dbo].[AlohaEmployees]
+  WHERE FirstName <> '' AND LastName <> '' AND Address1 <> ''
+GO
+
+
